@@ -1,0 +1,76 @@
+{%extends 'pg/base.html' %}
+  {%block content_block%}
+    <div class="jumbotron">
+      <h1 class="display-3 text-center">PG Details</h1>
+    </div>
+
+    <div class="container">
+      <div class="row topMargin">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 list-group-item">
+          <div id="carouselExampleIndicators" class="carousel slide text-center" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active thumbnail">
+                {%if uploadpg.pgimage1%}
+                <img class="img-fluid roomDetailImg" src="{{uploadpg.pgimage1.url}}" width="50px" alt="">
+                {%endif%}
+              </div>
+              <div class="carousel-item">
+
+                {%if uploadpg.pgimage2%}
+                <img class="img-fluid roomDetailImg" src="{{uploadpg.pgimage2.url}}" width="50px"class="d-block w-100" alt="">
+                {%endif%}
+              </div>
+              <div class="carousel-item">
+                {%if uploadpg.pgimage3%}
+                <img class="img-fluid roomDetailImg" src="{{uploadpg.pgimage3.url}}" width="50px" alt="">
+                {%endif%}
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <hr>
+          <p><b>Name : </b>{{uploadpg.pgname}}</p>
+          <p><b>TYPE : </b>{{uploadpg.pgtype}}</p>
+          <p><b>LOCATION : </b> {{uploadpg.pglocation}}</p>
+          <p><b>DESCRIPTION : </b> {{uploadpg.pgdescription}}</p>
+        </div><br>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-primary"><b>PRICE</b> : {{uploadpg.pgprice}}</li>
+            <li class="list-group-item list-group-item-success"><b>CONDITION : </b> {{uploadpg.pgcondition}}</li>
+            <li class="list-group-item list-group-item-danger"><b>MEALS : </b> {{uploadpg.pgmeals}}</li>
+            <li class="list-group-item list-group-item-warning"><b>If Interested Contact : &nbsp;</b><i class="fas fa-phone"></i>   {{uploadpg.pgmobile}}</li>
+            <li class="list-group-item list-group-item-info"><b>Owner : &nbsp;</b>  {{uploadpg.ownername}}</li>
+            <li class="list-group-item list-group-item-dark"><b>AMMENITIES</b>
+              <ul>
+                <li>{{uploadpg.ammenities1}}</li>
+                <li>{{uploadpg.ammenities2}}</li>
+                <li>{{uploadpg.ammenities3}}</li>
+                <li>{{uploadpg.ammenities4}}</li>
+                <li>{{uploadpg.ammenities5}}</li>
+                <li>{{uploadpg.ammenities6}}</li>
+                <li>{{uploadpg.ammenities7}}</li>
+                <li>{{uploadpg.ammenities8}}</li>
+                <li>{{uploadpg.ammenities9}}</li>
+                <li>{{uploadpg.ammenities10}}</li>
+              </ul>
+            </li>
+          </ul><br>
+        </div>
+      </div>
+    </div>
+
+  {%endblock%}

@@ -1,0 +1,15 @@
+{%extends 'pg/base.html' %}
+  {%block content_block%}
+    <div class="jumbotron">
+      <h1 class="display-3 container"><i class="fas fa-home"></i> PG IN KHRAR</h1>
+    </div>
+    <div class="container topMargin">
+      {% for pg in pglist %}
+        <div  class="list-group">
+          <a href="/{{pg.id}}" class="list-group-item list-group-item-action">
+          <img class="float-left inkhrarImage" src="{{pg.pgimage1.url}}" alt=""><div class="inkhrarPadding"><h1 class="khararprice ">{{pg.pgname}}</h1><h2>{{pg.pgtype}}</h2> <h3 class="khararprice"> {{pg.pgprice}}</h3><p>{{pg.pgdescription}}</p></div></a><br>
+        </div>
+      {%endfor%}
+        {%include 'pg/pagination.html' with page=page_obj %}<br>
+    </div>
+  {%endblock%}

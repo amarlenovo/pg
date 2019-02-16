@@ -1,0 +1,301 @@
+.navbar-nav > li > .dropdown-menu {
+  background-color: black;
+}
+.navbar-nav > li > .dropdown-menu a{
+  color: #d1d1d1;
+}
+.navbar-nav > li > .dropdown-menu a:hover{
+  color: black;
+}
+#headerHello{
+  color:#0099e5;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+#HeaderPG{
+  color: #ff4c4c;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+#footerHello{
+  color:#0099e5;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+#footerPG{
+  color: #ff4c4c;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+.footer {
+  position: relative;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
+  background-color: #2d2d2d;
+}
+.footer .jumbotron{
+  background-color: #2d2d2d;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.size{
+  font-size: 14px;
+}
+
+h1{
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+#footerH1{
+ overflow: hidden;
+ text-align: center;
+ font-size: 40px;
+}
+#footerH1:before,
+#footerH1:after {
+ background-color: #615f5d;
+ content: "";
+ display: inline-block;
+ height: 2.5px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+#footerH1:before {
+ right: 0.2em;
+ margin-left: -50%;
+}
+#footerH1:after {
+ left: 0.2em;
+ margin-right: -50%;
+}
+a{
+  text-decoration: none !important;
+}
+.icon{
+  width: 25px;
+}
+#copyright{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  /* padding-bottom: 10px; */
+}
+ul{
+  list-style: none;
+}
+.loginLogo{
+  width: 300px;
+  margin-left: auto;
+  margin-right: -7%;
+}
+.topMargin{
+  margin-top: 2%;
+}
+.teamImage{
+  width: 400px;
+  align-items: center;
+}
+.teamParagraph{
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 500;
+}
+.teamMargin{
+  margin: 5%;
+}
+.teamMargin .row h2{
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 40px;
+    font-weight: 550;
+}
+#teamHeading{
+      font-family: 'Ubuntu Condensed', sans-serif;
+      text-align: center;
+      font-weight: 900;
+}
+.gallaryImg{
+  width: 100%;
+  height: auto;
+}
+.gallaryImage{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  filter: blur(2px);
+}
+.row img:hover{
+  filter: blur(0);
+  transition: 1.5s;
+  transform: scale(1.2);
+}
+.aboutParagraph{
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+.aboutImage{
+  width: 100%;
+  height: auto;
+  border: solid 4px black;
+}
+.contactli{
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 25px;
+  text-align: justify;
+  font-weight: 500;
+}
+.tiffinImage{
+  width: 400px;
+  height: 250px;
+}
+.tiffinLi{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-align: justify;
+}
+.tiffinUi{
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 35px;
+  text-align: justify;
+}
+.homeImage{
+  background: url(https://images.alphacoders.com/435/thumb-1920-435117.jpg) no-repeat scroll;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 30%;
+  padding-bottom: 15%;
+}
+#logimg{
+  background: url(https://images.alphacoders.com/435/thumb-1920-435117.jpg) no-repeat scroll;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* padding-left: 20%;
+  padding-right: 20%; */
+
+}
+.container .logpage{
+  background-color:rgba(0,0,0,0.8);
+  color:white;
+  padding:5%;
+  text-align: center;
+}
+.loginhr{
+  background-color: white;
+  height: 0.5px;
+}
+
+.container .signpage{
+  background-color:rgba(0,0,0,0.8);
+  color: white;
+  padding:10%;
+}
+#signimg{
+  background: url(https://images.alphacoders.com/435/thumb-1920-435117.jpg) no-repeat scroll;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* padding-left: 15%;
+  padding-right: 15%; */
+
+}
+
+#ac{
+  width: 120px;
+  height: 100px;
+  margin: 0px;
+
+}
+#ac:hover{
+  transform: none;
+}
+.offer{
+  background-color: #ffcb3a;
+  margin: 0px;
+  /* font-size: 6vw; */
+
+}
+.jumbotron{
+  margin: 0px;
+  background-color:#a5bce2;
+  padding: 30px;
+}
+.head{
+  color: #ffc300;
+  font-weight: 600;
+  font-size: 60px;
+}
+.head2{
+  color: white;
+  font-weight: 500;
+  font-size: 45px;
+}
+.inkhrarImage{
+  width: 200px;
+  height: auto;
+}
+.inkhrarPadding{
+  padding-left : 250px;
+}
+.khararprice{
+  color: red;
+}
+
+.student,
+.owner{
+  width: 50%;
+  height: 60px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+.owner{
+    background: #edeef2;
+}
+.form-control{
+  background-color: #edeef2;
+}
+
+.profile_img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+.roomDetailImg{
+  width: 100%;
+  height: auto;
+}
+#profileimg{
+  background: url(https://images.alphacoders.com/435/thumb-1920-435117.jpg) no-repeat scroll;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.container .profilepage{
+  background-color:rgba(0,0,0,0.8);
+  color:white;
+  padding:5%;
+  /* text-align: center; */
+}

@@ -1,0 +1,35 @@
+{%extends 'pg/base.html' %}
+{% load crispy_forms_tags%}
+  {%block content_block%}
+  <div id="signimg">
+    <div class="container">
+      <div class="signpage">
+        <h6 class="text-center display-4">Enter Your Post</h6>
+          <hr class="loginhr"><br>
+          <div class="">
+            <form class=""  method="post" enctype="multipart/form-data" novalidate>
+              {%csrf_token%}
+              {{upload|crispy}}
+              <!-- {%for non_field_error in upload.non_field.errors%}
+                <p class="help is-danger">{{non_field_error}}</p>
+              {%endfor%}
+              {%for field in upload%}
+                <div class="field">
+                  <label for="{{field.id_for_label}}" class="label">{{field.html_name}}</label>
+                  {{field}}<br>
+                  {%if field.help_text%}
+                    <p class="help">{{field.help_text}}</p>
+                  {%endif%}
+                  {%for error in field.errors%}
+                    <p class="help is-danger">{{error}}</p>
+                  {%endfor%}
+                </div>
+              {%endfor%} -->
+              <hr class="loginhr">
+              <button type="submit" class="btn btn-primary btn-block" name="button">UPLOAD</button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  {%endblock%}

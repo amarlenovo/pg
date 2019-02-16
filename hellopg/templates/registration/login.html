@@ -1,0 +1,37 @@
+{%extends 'pg/base.html' %}
+{% load crispy_forms_tags%}
+  {%block content_block%}
+    <div id="logimg">
+      <div class="container">
+        <div class="logpage">
+          <h1 class="text-center display-4">Type your E-mail and Password here</h1>
+          <h4>(Only for Owner)</h4>
+          <hr class="loginhr"><br>
+          <div class="justify-text-center">
+            <form class=""  method="post" novalidate>
+              {%csrf_token%}
+              {{form|crispy}}
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                  <div class="checkbox text-center">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                  <a href="{% url 'password_reset' %}" class="text-center"> Forgot your password ?</a>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                </div>
+              </div>
+              <hr class="loginhr">
+              <button type="submit" class="btn btn-primary btn-block" name="button">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%endblock%}

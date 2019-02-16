@@ -1,0 +1,33 @@
+{%extends 'pg/base.html' %}
+{% load crispy_forms_tags%}
+  {%block content_block%}
+
+    <div id="profileimg">
+      <div class="container">
+        <div class="profilepage">
+          <div class="content-section">
+            <div class="media">
+              <img class="rounded-circle profile_img" src="{{user.profile.profile_pic.url}}">
+                <div class="media-body">
+                  <h1 class="account-heading">Username : {{user.username}}</h1>
+                  <h5 class="text-secondary">Name : {{user.first_name}} {{user.last_name}}</h5>
+                  <h5 class="text-secondary">Email : {{user.email}}</h5>
+                </div>
+            </div>
+            <form class=""  method="post" enctype="multipart/form-data" >
+              {%csrf_token%}
+              <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Profile Info (Update)</legend>
+                {{u_form|crispy}}
+                {{p_form|crispy}}
+              </fieldset>
+
+              <hr class="form-group">
+              <button type="submit" class="btn btn-primary btn-block" name="button">Update</button>
+            </form>
+          </div>
+          <hr class="loginhr"><br>
+        </div>
+      </div>
+    </div>
+  {%endblock%}
